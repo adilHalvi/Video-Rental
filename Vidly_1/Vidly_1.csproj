@@ -172,6 +172,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="EntityConfigurations\CustomerConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -190,6 +191,10 @@
     <Compile Include="Migrations\202009210531585_PopulateMembershipTypesTable.cs" />
     <Compile Include="Migrations\202009210531585_PopulateMembershipTypesTable.Designer.cs">
       <DependentUpon>202009210531585_PopulateMembershipTypesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009210611049_ApplyFluentApiToNameColumnInCustomersTable.cs" />
+    <Compile Include="Migrations\202009210611049_ApplyFluentApiToNameColumnInCustomersTable.Designer.cs">
+      <DependentUpon>202009210611049_ApplyFluentApiToNameColumnInCustomersTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -291,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009210531585_PopulateMembershipTypesTable.resx">
       <DependentUpon>202009210531585_PopulateMembershipTypesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009210611049_ApplyFluentApiToNameColumnInCustomersTable.resx">
+      <DependentUpon>202009210611049_ApplyFluentApiToNameColumnInCustomersTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
