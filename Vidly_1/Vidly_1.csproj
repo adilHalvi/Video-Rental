@@ -204,6 +204,10 @@
     <Compile Include="Migrations\202009220250138_PopulateNameColumnInMembershipTypesTable.Designer.cs">
       <DependentUpon>202009220250138_PopulateNameColumnInMembershipTypesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009222320235_AddBirthdateColumnToCustomersTable.cs" />
+    <Compile Include="Migrations\202009222320235_AddBirthdateColumnToCustomersTable.Designer.cs">
+      <DependentUpon>202009222320235_AddBirthdateColumnToCustomersTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -313,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009220250138_PopulateNameColumnInMembershipTypesTable.resx">
       <DependentUpon>202009220250138_PopulateNameColumnInMembershipTypesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009222320235_AddBirthdateColumnToCustomersTable.resx">
+      <DependentUpon>202009222320235_AddBirthdateColumnToCustomersTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
