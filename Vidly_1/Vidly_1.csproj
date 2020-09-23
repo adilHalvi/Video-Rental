@@ -173,6 +173,8 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="EntityConfigurations\CustomerConfiguration.cs" />
+    <Compile Include="EntityConfigurations\GenreConfiguration.cs" />
+    <Compile Include="EntityConfigurations\MovieConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -208,9 +210,22 @@
     <Compile Include="Migrations\202009222320235_AddBirthdateColumnToCustomersTable.Designer.cs">
       <DependentUpon>202009222320235_AddBirthdateColumnToCustomersTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009230215388_AddGenreToCustomersTable.cs" />
+    <Compile Include="Migrations\202009230215388_AddGenreToCustomersTable.Designer.cs">
+      <DependentUpon>202009230215388_AddGenreToCustomersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009230220008_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\202009230220008_PopulateGenresTable.Designer.cs">
+      <DependentUpon>202009230220008_PopulateGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009230410210_OverrideConventionsOnMoviesAndGenresTable.cs" />
+    <Compile Include="Migrations\202009230410210_OverrideConventionsOnMoviesAndGenresTable.Designer.cs">
+      <DependentUpon>202009230410210_OverrideConventionsOnMoviesAndGenresTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -320,6 +335,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009222320235_AddBirthdateColumnToCustomersTable.resx">
       <DependentUpon>202009222320235_AddBirthdateColumnToCustomersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009230215388_AddGenreToCustomersTable.resx">
+      <DependentUpon>202009230215388_AddGenreToCustomersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009230220008_PopulateGenresTable.resx">
+      <DependentUpon>202009230220008_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009230410210_OverrideConventionsOnMoviesAndGenresTable.resx">
+      <DependentUpon>202009230410210_OverrideConventionsOnMoviesAndGenresTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
