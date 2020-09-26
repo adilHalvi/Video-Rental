@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Vidly_1.Models;
 
+
 namespace Vidly_1.Controllers
 {
     public class MoviesController : Controller
