@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly_1.Models;
-
+using Vidly_1.ViewModels;
 
 namespace Vidly_1.Controllers
 {
@@ -30,6 +30,35 @@ namespace Vidly_1.Controllers
             var movies = _context.Movies.Include(m => m.Genre).ToList();
             
             return View(movies);
+        }
+
+        public ActionResult New()
+        {
+            var genres = _context.Genres.ToList();
+
+            var viewModel = new MovieFormViewModel()
+            {
+                Genres = genres
+            };
+
+            return View("MovieForm", viewModel);    
+        }
+
+        [HttpPost]
+        public ActionResult Save(Movie movie)
+        {
+            if(movie.Id == 0)
+            {
+                movie.DateAdded = DateTime.Now;
+                _context.Movies.Add(movie);
+            }
+            else
+            {
+                
+            }
+
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Movies");
         }
 
         public ActionResult Details(int id)
